@@ -1,0 +1,21 @@
+import java.util.*;
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char ch;
+		ch = sc.next().charAt(0);
+		if(Character.isLetter(ch)){
+			System.out.println(ch+" is an Alpahbet");
+		}
+		else if(Character.isDigit(ch)){
+			System.out.println(ch+" is a Digit");
+		}
+		else if(Character.isWhitespace(ch)){
+			System.out.println(ch+" is a WhiteSpace");
+		}
+		else{
+			System.out.println(ch+" is a Special Charecter");
+		}
+    }
+}
